@@ -123,6 +123,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                     value = textEmail,
                     onValueChange = { textEmail = it },
                     label = { Text(stringResource(id = R.string.email)) },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large
                 )
 
 
