@@ -333,7 +333,10 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             if (checkedUIUX) skills.add(stringResource(id = R.string.skill_uiux))
                             if (checkedWeb) skills.add(stringResource(id = R.string.skill_web))
 
+                            val resultSkill = if (skills.isEmpty()) stringResource(id = R.string.no_skill) else skills.joinToString(", ")
+                            Text(text = stringResource(id = R.string.res_skill) + resultSkill)
 
+                            
                         }
                     }
                 }
