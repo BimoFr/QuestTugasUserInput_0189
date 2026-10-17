@@ -171,8 +171,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             singleLine = true,
                             shape = MaterialTheme.shapes.large
                         )
-
                     }
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_medium)))
+
                 }
             }
         }
