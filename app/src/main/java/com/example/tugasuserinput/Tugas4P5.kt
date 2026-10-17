@@ -234,11 +234,10 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 }
                             }
 
-                            }
-
-
+                        }
                     }
-            }
+                    Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_large)))
+                }
         }
     }
 }
