@@ -317,6 +317,7 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 fontSize = 20.sp,
                                 color = colorResource(id = R.color.purple_title)
                             )
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_medium)))
                         }
                     }
                 }
