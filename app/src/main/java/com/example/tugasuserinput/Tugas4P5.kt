@@ -26,6 +26,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
         stringResource(id = R.string.exp_less_2),
         stringResource(id = R.string.exp_more_3)
     )
+    var checkedAndroid by remember { mutableStateOf(false) }
+    var checkedUIUX by remember { mutableStateOf(false) }
+    var checkedWeb by remember { mutableStateOf(false) }
 
 
 
