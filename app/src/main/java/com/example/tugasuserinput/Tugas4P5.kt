@@ -159,7 +159,7 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         expanded = expandedDropdown,
                         onExpandedChange = { expandedDropdown = !expandedDropdown },
                         modifier = Modifier.weight(1f)
-                    ) {
+                    ){
                         OutlinedTextField(
                             value = textExperience,
                             onValueChange = { },
@@ -197,14 +197,16 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 IconButton(onClick = { showDatePicker = true }) {
                                     Icon(Icons.Default.DateRange, contentDescription = null)
                                 }
-                            },
-
+                                },
+                            modifier = Modifier.weight(1f),
+                            singleLine = true,
+                            shape = MaterialTheme.shapes.large
                         )
 
 
                     }
-                }
             }
         }
     }
 }
+    }
