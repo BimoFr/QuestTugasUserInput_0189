@@ -15,5 +15,9 @@
     <string name="img_desc">Header Background Spider</string>
     <string name="empty_string"></string>
 
+    <string name="exp_less_1">&lt;1 tahun</string>
+    <string name="exp_less_2">&lt;2 tahun</string>
+    <string name="exp_more_3">&gt;3 tahun</string>
+
 
 </resources>
