@@ -255,6 +255,10 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 onCheckedChange = { checkedAndroid = it })
                             Text(stringResource(id = R.string.skill_android))
                         }
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(checked = checkedUIUX, onCheckedChange = { checkedUIUX = it })
+                            Text(stringResource(id = R.string.skill_uiux))
+                        }
                     }
                 }
             }
