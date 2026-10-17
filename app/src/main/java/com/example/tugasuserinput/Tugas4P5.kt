@@ -2,8 +2,10 @@ package com.example.tugasuserinput
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -90,8 +92,14 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                     fontWeight = FontWeight.Bold
                 )
                 Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.space_medium))
+                ) {
 
-            }
+                }
+
+                }
 
         }
 
