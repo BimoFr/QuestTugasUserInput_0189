@@ -22,5 +22,12 @@
     <string name="btn_ok">OK</string>
     <string name="btn_cancel">Batal</string>
 
-
+    <string name="dialog_title">Hasil Biodata</string>
+    <string name="res_name">Nama: </string>
+    <string name="res_email">Email: </string>
+    <string name="res_birth">Tgl Lahir: </string>
+    <string name="res_exp">Experience: </string>
+    <string name="res_skill">Skill: </string>
+    <string name="dialog_close">Tutup</string>
+    <string name="no_skill">Belum ada skill yang dipilih</string>
 </resources>
