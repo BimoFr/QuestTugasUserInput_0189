@@ -17,6 +17,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material3.ExposedDropdownMenuBox
+import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -162,6 +163,12 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             onValueChange = { },
                             readOnly = true,
                             label = { Text(stringResource(id = R.string.experience)) },
+                            trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedDropdown) },
+                            colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
+                            modifier = Modifier.menuAnchor(),
+                            singleLine = true,
+                            shape = MaterialTheme.shapes.large
+                        )
 
                     }
                 }
