@@ -37,6 +37,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
@@ -279,6 +280,11 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             ),
                             shape = MaterialTheme.shapes.large
                         ){
+                            Text(
+                                text = stringResource(id = R.string.btn_proceed),
+                                color = if (isDataValid) Color.White else Color.Black,
+                                fontWeight = FontWeight.Bold
+                            )
 
                         }
 
