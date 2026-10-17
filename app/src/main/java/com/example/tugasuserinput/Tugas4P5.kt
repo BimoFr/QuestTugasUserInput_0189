@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDatePickerState
@@ -101,7 +102,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         value = textNamaDepan,
                         onValueChange = { textNamaDepan = it },
                         label = { Text(stringResource(id = R.string.nama_depan)) },
-                        
+                        modifier = Modifier.weight(1f),
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large
                     )
                 }
 
