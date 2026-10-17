@@ -243,9 +243,16 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.align(Alignment.Start)
                     )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+
+                    }
 
                 }
+            }
         }
     }
 }
-    }
