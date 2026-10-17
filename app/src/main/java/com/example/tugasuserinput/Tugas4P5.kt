@@ -157,6 +157,11 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         onExpandedChange = { expandedDropdown = !expandedDropdown },
                         modifier = Modifier.weight(1f)
                     ){
+                        OutlinedTextField(
+                            value = textExperience,
+                            onValueChange = { },
+                            readOnly = true,
+                            label = { Text(stringResource(id = R.string.experience)) },
 
                     }
                 }
