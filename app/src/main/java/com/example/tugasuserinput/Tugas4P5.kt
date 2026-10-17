@@ -336,7 +336,8 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             val resultSkill = if (skills.isEmpty()) stringResource(id = R.string.no_skill) else skills.joinToString(", ")
                             Text(text = stringResource(id = R.string.res_skill) + resultSkill)
 
-                            
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_large)))
+
                         }
                     }
                 }
