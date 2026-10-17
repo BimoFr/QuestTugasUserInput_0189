@@ -212,6 +212,11 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 onValueChange = { },
                                 readOnly = true,
                                 label = { Text(stringResource(id = R.string.experience)) },
+                                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedDropdown) },
+                                colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
+                                modifier = Modifier.menuAnchor(),
+                                singleLine = true,
+                                shape = MaterialTheme.shapes.large
                             )
 
                         }
