@@ -237,6 +237,13 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         }
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_large)))
+
+                    Text(
+                        text = stringResource(id = R.string.skills_label),
+                        fontWeight = FontWeight.Bold,
+                        modifier = Modifier.align(Alignment.Start)
+                    )
+
                 }
         }
     }
