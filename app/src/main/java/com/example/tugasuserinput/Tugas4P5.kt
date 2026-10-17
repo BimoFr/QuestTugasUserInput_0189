@@ -85,7 +85,8 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                 Text(
                     text = stringResource(id = R.string.form_judul),
                     color = colorResource(id = R.color.purple_title),
-
+                    fontSize = dimensionResource(id = R.dimen.text_title).value.sp,
+                    fontWeight = FontWeight.Bold
                 )
 
             }
