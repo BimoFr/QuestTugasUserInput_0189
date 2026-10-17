@@ -21,6 +21,8 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.DatePicker
+import androidx.compose.material3.DatePickerDialog
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
@@ -30,6 +32,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -50,6 +53,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -333,7 +339,10 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             if (checkedUIUX) skills.add(stringResource(id = R.string.skill_uiux))
                             if (checkedWeb) skills.add(stringResource(id = R.string.skill_web))
 
-                            val resultSkill = if (skills.isEmpty()) stringResource(id = R.string.no_skill) else skills.joinToString(", ")
+                            val resultSkill =
+                                if (skills.isEmpty()) stringResource(id = R.string.no_skill) else skills.joinToString(
+                                    ", "
+                                )
                             Text(text = stringResource(id = R.string.res_skill) + resultSkill)
 
                             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_large)))
@@ -341,13 +350,41 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             Button(
                                 onClick = { showPopupDialog = false },
                                 modifier = Modifier.align(Alignment.End),
-                                colors = ButtonDefaults.buttonColors(containerColor = colorResource(id = R.color.purple_title))
+                                colors = ButtonDefaults.buttonColors(
+                                    containerColor = colorResource(
+                                        id = R.color.purple_title
+                                    )
+                                )
                             ) {
                                 Text(stringResource(id = R.string.dialog_close))
                             }
 
                         }
                     }
+                }
+            }
+            if (showDatePicker) {
+                DatePickerDialog(
+                    onDismissRequest = { showDatePicker = false },
+                    confirmButton = {
+                        TextButton(onClick = {
+                            val selectedMillis = datePickerState.selectedDateMillis
+                            if (selectedMillis != null) {
+                                val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                                textTglLahir = formatter.format(Date(selectedMillis))
+                            }
+                            showDatePicker = false
+                        }) {
+                            Text(stringResource(id = R.string.btn_ok))
+                        }
+                    },
+                    dismissButton = {
+                        TextButton(onClick = { showDatePicker = false }) {
+                            Text(stringResource(id = R.string.btn_cancel))
+                        }
+                    }
+                ) {
+                    DatePicker(state = datePickerState)
                 }
             }
         }
