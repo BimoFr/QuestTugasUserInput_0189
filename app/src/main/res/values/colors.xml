@@ -3,4 +3,8 @@
     <color name="purple_title">#6A1B9A</color>
     <color name="gray_subtitle">#9E9E9E</color>
     <color name="gray_button">#E0E0E0</color>
+    <color name="white_background">#FFFFFF</color>
+    <color name="black_text">#000000</color>
+    <color name="blue_shadow_transparent">#4D0055FF</color>
+    <color name="blue_popup_bg">#E6F0F8FF</color>
 </resources>
