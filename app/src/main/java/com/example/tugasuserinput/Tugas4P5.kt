@@ -338,6 +338,14 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
 
                             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_large)))
 
+                            Button(
+                                onClick = { showPopupDialog = false },
+                                modifier = Modifier.align(Alignment.End),
+                                colors = ButtonDefaults.buttonColors(containerColor = colorResource(id = R.color.purple_title))
+                            ) {
+                                Text(stringResource(id = R.string.dialog_close))
+                            }
+
                         }
                     }
                 }
