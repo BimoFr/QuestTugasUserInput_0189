@@ -112,7 +112,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         value = textNamaBelakang,
                         onValueChange = { textNamaBelakang = it },
                         label = { Text(stringResource(id = R.string.nama_belakang)) },
-
+                        modifier = Modifier.weight(1f),
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large
                     )
 
 
