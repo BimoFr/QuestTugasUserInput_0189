@@ -174,6 +174,13 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                     }
                     Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_medium)))
 
+                    OutlinedTextField(
+                        value = textEmail,
+                        onValueChange = { textEmail = it },
+                        label = { Text(stringResource(id = R.string.email)) },
+
+                    )
+
                 }
             }
         }
