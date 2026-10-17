@@ -48,6 +48,10 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = R.drawable.fstvlst),
             contentDescription = stringResource(id = R.string.img_desc),
+            contentScale = ContentScale.Crop,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(dimensionResource(id = R.dimen.header_height))
         )
 
 
