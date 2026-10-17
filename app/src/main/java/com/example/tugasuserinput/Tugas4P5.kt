@@ -30,6 +30,8 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
     var checkedUIUX by remember { mutableStateOf(false) }
     var checkedWeb by remember { mutableStateOf(false) }
 
+    var showPopupDialog by remember { mutableStateOf(false) }
+
 
 
 }
