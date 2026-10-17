@@ -277,8 +277,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 containerColor = colorResource(id = R.color.purple_title),
                                 disabledContainerColor = colorResource(id = R.color.gray_button)
                             ),
+                            shape = MaterialTheme.shapes.large
                         ){
-                            
+
                         }
 
                     }
