@@ -16,6 +16,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -151,6 +152,13 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         singleLine = true,
                         shape = MaterialTheme.shapes.large
                     )
+                    ExposedDropdownMenuBox(
+                        expanded = expandedDropdown,
+                        onExpandedChange = { expandedDropdown = !expandedDropdown },
+                        modifier = Modifier.weight(1f)
+                    ){
+
+                    }
                 }
             }
         }
