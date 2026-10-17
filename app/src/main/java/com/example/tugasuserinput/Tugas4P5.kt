@@ -142,10 +142,15 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         onValueChange = { },
                         readOnly = true,
                         label = { Text(stringResource(id = R.string.tgl_lahir)) },
+                        trailingIcon = {
+                            IconButton(onClick = { showDatePicker = true }) {
+                                Icon(Icons.Default.DateRange, contentDescription = null)
+                            }
+                        },
 
                     )
                 }
             }
         }
     }
-}
+    }
