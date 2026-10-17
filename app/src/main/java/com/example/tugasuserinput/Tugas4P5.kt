@@ -202,6 +202,13 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             singleLine = true,
                             shape = MaterialTheme.shapes.large
                         )
+                        ExposedDropdownMenuBox(
+                            expanded = expandedDropdown,
+                            onExpandedChange = { expandedDropdown = !expandedDropdown },
+                            modifier = Modifier.weight(1f)
+                        ){
+
+                        }
 
 
                     }
