@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Tugas User Input</string>
+    <string name="app_name">Form Biodata App</string>
+    <string name="form_judul">Form Biodata</string>
 </resources>
