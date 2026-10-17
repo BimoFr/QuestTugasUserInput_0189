@@ -147,7 +147,9 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 Icon(Icons.Default.DateRange, contentDescription = null)
                             }
                         },
-
+                        modifier = Modifier.weight(1f),
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large
                     )
                 }
             }
