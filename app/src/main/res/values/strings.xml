@@ -11,4 +11,9 @@
     <string name="skill_android">Android</string>
     <string name="skill_uiux">UI/UX</string>
     <string name="skill_web">Web</string>
+    <string name="btn_proceed">Proceed</string>
+    <string name="img_desc">Header Background Spider</string>
+    <string name="empty_string"></string>
+
+
 </resources>
