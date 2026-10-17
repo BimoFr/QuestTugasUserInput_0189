@@ -318,6 +318,15 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                                 color = colorResource(id = R.color.purple_title)
                             )
                             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_medium)))
+
+                            Text(text = stringResource(id = R.string.res_name) + textNamaDepan + " " + textNamaBelakang)
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
+                            Text(text = stringResource(id = R.string.res_email) + textEmail)
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
+                            Text(text = stringResource(id = R.string.res_birth) + textTglLahir)
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
+                            Text(text = stringResource(id = R.string.res_exp) + textExperience)
+                            Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
                         }
                     }
                 }
