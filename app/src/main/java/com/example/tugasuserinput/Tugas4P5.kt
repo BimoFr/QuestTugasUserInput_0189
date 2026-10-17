@@ -310,7 +310,14 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         shape = RoundedCornerShape(16.dp),
                         colors = CardDefaults.cardColors(containerColor = colorResource(id = R.color.blue_popup_bg))
                     ) {
-
+                        Column(modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_large))) {
+                            Text(
+                                text = stringResource(id = R.string.dialog_title),
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 20.sp,
+                                color = colorResource(id = R.color.purple_title)
+                            )
+                        }
                     }
                 }
             }
