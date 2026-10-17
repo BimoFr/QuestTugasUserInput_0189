@@ -1,5 +1,6 @@
 package com.example.tugasuserinput
 
+import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -9,9 +10,13 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun FormBiodataLayout(modifier: Modifier = Modifier) {
-    // state input form
     var textNamaDepan by remember { mutableStateOf("") }
     var textNamaBelakang by remember { mutableStateOf("") }
     var textEmail by remember { mutableStateOf("") }
-    
+
+    var textTglLahir by remember { mutableStateOf("") }
+    var showDatePicker by remember { mutableStateOf(false) }
+    val datePickerState = rememberDatePickerState()
+
+
 }
