@@ -263,7 +263,7 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             Checkbox(checked = checkedWeb, onCheckedChange = { checkedWeb = it })
                             Text(stringResource(id = R.string.skill_web))
                         }
-
+                        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_large)))
                     }
                 }
             }
