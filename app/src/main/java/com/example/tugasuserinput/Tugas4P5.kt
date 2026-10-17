@@ -327,6 +327,13 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
                             Text(text = stringResource(id = R.string.res_exp) + textExperience)
                             Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.space_small)))
+
+                            val skills = mutableListOf<String>()
+                            if (checkedAndroid) skills.add(stringResource(id = R.string.skill_android))
+                            if (checkedUIUX) skills.add(stringResource(id = R.string.skill_uiux))
+                            if (checkedWeb) skills.add(stringResource(id = R.string.skill_web))
+
+
                         }
                     }
                 }
