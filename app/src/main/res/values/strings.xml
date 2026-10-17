@@ -19,5 +19,8 @@
     <string name="exp_less_2">&lt;2 tahun</string>
     <string name="exp_more_3">&gt;3 tahun</string>
 
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Batal</string>
+
 
 </resources>
