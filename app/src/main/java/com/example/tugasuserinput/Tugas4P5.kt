@@ -159,7 +159,7 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         expanded = expandedDropdown,
                         onExpandedChange = { expandedDropdown = !expandedDropdown },
                         modifier = Modifier.weight(1f)
-                    ){
+                    ) {
                         OutlinedTextField(
                             value = textExperience,
                             onValueChange = { },
@@ -188,10 +188,22 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.space_medium))
                     ) {
+                        OutlinedTextField(
+                            value = textTglLahir,
+                            onValueChange = { },
+                            readOnly = true,
+                            label = { Text(stringResource(id = R.string.tgl_lahir)) },
+                            trailingIcon = {
+                                IconButton(onClick = { showDatePicker = true }) {
+                                    Icon(Icons.Default.DateRange, contentDescription = null)
+                                }
+                            },
+
+                        )
+
 
                     }
-
-                    }
+                }
             }
         }
     }
