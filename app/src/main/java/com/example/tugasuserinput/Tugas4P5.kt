@@ -74,10 +74,12 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(top = dimensionResource(id = R.dimen.card_top_offset))
-                .clip(RoundedCornerShape(
-                    topStart = dimensionResource(id = R.dimen.card_corner_radius),
-                    topEnd = dimensionResource(id = R.dimen.card_corner_radius)
-                ))
+                .clip(
+                    RoundedCornerShape(
+                        topStart = dimensionResource(id = R.dimen.card_corner_radius),
+                        topEnd = dimensionResource(id = R.dimen.card_corner_radius)
+                    )
+                )
                 .background(colorResource(id = R.color.white_background))
         ) {
             Column(
@@ -106,11 +108,18 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                         singleLine = true,
                         shape = MaterialTheme.shapes.large
                     )
-                }
+                    OutlinedTextField(
+                        value = textNamaBelakang,
+                        onValueChange = { textNamaBelakang = it },
+                        label = { Text(stringResource(id = R.string.nama_belakang)) },
+
+                    )
+
 
                 }
 
-        }
+            }
 
         }
+    }
 }
