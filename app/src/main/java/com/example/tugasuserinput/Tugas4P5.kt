@@ -259,6 +259,11 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
                             Checkbox(checked = checkedUIUX, onCheckedChange = { checkedUIUX = it })
                             Text(stringResource(id = R.string.skill_uiux))
                         }
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Checkbox(checked = checkedWeb, onCheckedChange = { checkedWeb = it })
+                            Text(stringResource(id = R.string.skill_web))
+                        }
+
                     }
                 }
             }
