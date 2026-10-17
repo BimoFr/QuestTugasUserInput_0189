@@ -32,6 +32,10 @@ fun FormBiodataLayout(modifier: Modifier = Modifier) {
 
     var showPopupDialog by remember { mutableStateOf(false) }
 
+    val isDataValid = textNamaDepan.isNotEmpty() &&
+            textEmail.isNotEmpty() &&
+            textTglLahir.isNotEmpty()
+
 
 
 }
